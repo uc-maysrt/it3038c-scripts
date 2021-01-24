@@ -1,2 +1,2 @@
 # it3038c-scripts
-# lab2 file
+# lab2 files
