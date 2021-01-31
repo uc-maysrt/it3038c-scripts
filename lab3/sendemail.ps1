@@ -25,4 +25,4 @@ $Body = "This machine's IP is $IP. User is $env:username. Hostname is $hostname.
 #Test that the $Body shows up in the way wanted
 Write-Host("$Body")
 
-#Send-MailMessage -To "maysrt@mail.uc.edu" -From "maysrd@gmail.com" -Subject "IT3038C Windows SysInfo" -Body $Body -SmtpServer smtp.gmail.com -port 587 -UseSSL -Credential (Get-Credential)
+Send-MailMessage -To "maysrt@mail.uc.edu" -From "maysrd@gmail.com" -Subject "IT3038C Windows SysInfo" -Body $Body -SmtpServer smtp.gmail.com -port 587 -UseSSL -Credential (Get-Credential)
