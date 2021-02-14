@@ -1,7 +1,7 @@
 import time, random
 from datetime import datetime, timedelta, date
-#Take a birthday input and calculate how many seconds old you are
-print("Please enter your birthday")
+#Problem #1: Take a birthday input and calculate how many seconds old you are
+print("Problem #1: Please enter your birthday")
 birthYear=int(input("Year:"))
 birthMonth=int(input("Month (1-12):"))
 birthDay=int(input("Day:"))
@@ -11,9 +11,9 @@ newDate = todaysDate - birthDate
 newDateseconds = int(newDate.total_seconds())
 print("Your age in seconds is " + str(newDateseconds))
 
-#5 second sleep before the next one
+print("5 second sleep before the next one")
 time.sleep(5)
-#Take a word as input and count how many letters, how many vowels, and how many consonants
+#Problem #2: Take a word as input and count how many letters, how many vowels, and how many consonants
 #Taken from stackoverflow
 # https://stackoverflow.com/a/25885108
 def countvowels(string):
@@ -28,7 +28,7 @@ def countconsonants(string):
         if char in "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ":
             num_consonants = num_consonants+1
     return num_consonants
-print("Please enter a word:")
+print("Problem #2: Please enter a word:")
 yourWord = input()
 while(True):
     if yourWord.isalpha() == True:
@@ -39,21 +39,50 @@ while(True):
 #repeats until a word is given.
         yourWord = input("That is not a word.  Please enter a word:")
 
-#5 second sleep before the next one
+print("5 second sleep before the next one")
 time.sleep(5)
 
-#Take a number input and calculate how many prime numbers come between it and 0
+#Problem #3: Take a number input and calculate how many prime numbers come between it and 0
+# for loop from:
+#  https://www.javatpoint.com/pyhton-print-all-prime-number-in-an-interval
+#Method #1 (no error checking):
+#lower = int(0)
 #print("Please enter a number:")
-#primeNum = int(input())
-#print("")
+#myNum = input()
+#for num in range(lower, int(myNum) + 1):
+#    if num > 1:
+#        for i in range(2, num):
+#            if (num % i) == 0:
+#                break
+#        else:
+#            print(num)
+#Method #2 (checks that it is a number):
+def primeNum(myNum):
+    lower = int(0)
+    for num in range(lower, int(myNum) + 1):
+        if num > 1:
+            for i in range(2, num):
+                if (num % i) == 0:
+                    break
+            else:
+                print(num)
+print("Problem #3: Please enter a number:")
+myNum = input()
+while True:
+    if myNum.isdigit() == False:
+        print("That is not a number. Please enter a number:")
+        myNum =input()
+    else:
+        primeNum(myNum)
+        break
 
-#5 second sleep before the next one
+print("5 second sleep before the next one")
 time.sleep(5)
 
-#Write a 'guess the number game' where a random number is generated and the user must guess the number.
-##The program says if their number is too high or too low until the right answer is guessed.
+#Problem #4: Write a 'guess the number game' where a random number is generated and the user must guess the number.
+# The program says if their number is too high or too low until the right answer is guessed.
 correctNumber = random.randint(0,100)
-print("Please enter a number between 0 and 100:")
+print("Problem #4: Please enter a number between 0 and 100:")
 myGuess = input()
 while True:
     if myGuess.isdigit() == False:
