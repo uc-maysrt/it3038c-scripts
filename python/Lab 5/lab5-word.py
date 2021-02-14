@@ -13,10 +13,13 @@ def countconsonants(string):
         if char in "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ":
             num_consonants = num_consonants+1
     return num_consonants
-
 print("Please enter a word:")
 yourWord = input()
-if yourWord.isalpha():
-    print("The amount of letters in" + yourWord + " is " + str(len(yourWord)) + ". The amount of vowels is " + str(countvowels(yourWord)) + ". The amount of vowels is " + str(countconsonants(yourWord)) )
-else:
-    yourWord = input("That is not a word.  Please enter a word:")
+while(True):
+    if yourWord.isalpha() == True:
+        print("The amount of letters in " + yourWord + " is " + str(len(yourWord)) + ". The amount of vowels is " + str(countvowels(yourWord)) + ". The amount of consonants is " + str(countconsonants(yourWord)) )
+#breaks so it doesn't get stuck in a loop.
+        break
+    elif yourWord.isalpha() == False:
+#repeats until a word is given.
+        yourWord = input("That is not a word.  Please enter a word:")
