@@ -10,6 +10,8 @@ I created it because I have a large amount of files that I would like to be more
 
 
 
+
+
 To run this program, make sure Python3 is installed and working.
 
 If using Windows, type:  
