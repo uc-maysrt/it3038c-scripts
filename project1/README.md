@@ -16,18 +16,23 @@ Example Output:
 ```
 $python bulkfilemover.py
 How many files do you have?
-2
+70000
 How many folders would you like?
-2
+70
 How many files per folder would you like?
-1
+1000
 Where is the parent directory located?
 C:\project1
-What is the prefix? filename
-What would you like the folder called? folder
+What would you like the folders called? folder-
+Folder folder-1000 created
+Folder folder-2000 created
+...
+Folder folder-70000 created
 
-Folder folder1 created
-Folder folder2 created
-filename1 moved into folder1
-filename2 moved into folder2
+What is the filename prefix? filename
+What is the file extension? .jpg
+filename(1-1000).jpg moved into folder1000
+filename(1001-2000).jpg moved into folder2000
+...
+filename(69001-70000).jpg moved into folder70000
 ```

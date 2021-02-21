@@ -7,30 +7,32 @@ import os
 print("How many files do you have?")
 numFiles = input()
 print("How many folders would you like?")
-numFolders = input()
+numFolders = int(input())
 print("How many files per folder would you like?")
 numFilesFolder = input()
-
 print("Where is the parent directory located?")
-path = input()
-print("What is the prefix?")
-prefix = input()
-print("What is the first filename?")
-firstFile = input()
-print("What is the last filename?")
-lastFile = input()
+parentDir = input()
+print("What would you like the folders called?")
+folderPrefix = input()
+print("What is the filename prefix?")
+filenamePrefix = input()
+print("What is the filename extension?")
+fileExtension = input()
+
+#probably not needed?
+#print("What is the first filename?")
+#firstFile = input()
+#print("What is the last filename?")
+#lastFile = input()
 
 #creates folders
-#slight code reuse from past lab (lab5-numbergame.py)
-while True:
-    if numFolders.isdigit() == False:
-        print("That is not a number. Please enter a number:")
-        numFolders =input()
-    elif int(numFolders) > 0:
-        newPath = oldPath + numFolders
-        os.mkdir(path)
-        print("Folder " + folderName + " created")
-    else:
-        break
+# runs through a while loop until there are no new folders to create.
+while 0 < numFolders:
+    folderName = folderPrefix + str(numFolders)
+    newPath = os.path.join(parentDir,folderName)
+    os.mkdir(newPath)
+    print("Folder " + folderName + " created")
+    #counts down the number
+    numFolders = numFolders - 1
 #moves files into previously created folders based on filenames/user input
 #os.sys("")
