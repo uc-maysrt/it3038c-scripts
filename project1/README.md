@@ -6,13 +6,12 @@ I created it because I have a large amount of files that I would like to be more
 
   Due to github free account storage limitations, not all of the files in the test folder (storage limitation is 1GB, test file output is 1.33GB).  I have included the first 1000 files.  
 
-  For comparison's sake, the actual project is a 39m26s video of 71,302 frames and the image file total size is between 20 and 40GB. 
+  For comparison's sake, the actual project is a 39m26s video of 71,302 frames and the image file total size is between 20 and 40GB.
 
 
-
-
-
-To run this program, make sure Python3 is installed and working.
+  
+  
+  To run this program, make sure Python3 is installed and working.
 
 If using Windows, type:  
   ```python --version```
