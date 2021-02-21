@@ -13,18 +13,18 @@ From the project1 folder that contains bulkfilemover.py, run the program using P
 python bulkfilemover.py
 
 Example Output:
-`$python bulkfilemover.py`
-`How many files do you have?`
-`2`
-`How many folders would you like?`
-`2`
-`How many files per folder would you like?`
-`1`
-`Where is the parent directory located?`
-`C:\project1`
-`What is the prefix? filename`
+```$python bulkfilemover.py
+How many files do you have?
+2
+How many folders would you like?
+2
+How many files per folder would you like?
+1
+Where is the parent directory located?
+C:\project1
+What is the prefix? filename
 
-`Folder folder1 created`
-`Folder folder2 created`
-`filename1 moved into folder1`
-`filename2 moved into folder2`
+Folder folder1 created
+Folder folder2 created
+filename1 moved into folder1
+filename2 moved into folder2```
