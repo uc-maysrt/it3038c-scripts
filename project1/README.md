@@ -24,6 +24,7 @@ How many files per folder would you like?
 Where is the parent directory located?
 C:\project1
 What is the prefix? filename
+What would you like the folder called? folder
 
 Folder folder1 created
 Folder folder2 created
