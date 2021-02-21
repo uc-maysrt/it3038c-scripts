@@ -3,8 +3,11 @@ This program bulk creates and moves files based on user input.
 I created it because I have a large amount of files that I would like to be more organized based on the numeric sequence they are in.  These files are created by loading a video into a program called [VirtualDub2](https://sourceforge.net/projects/vdfiltermod/) and then doing an image sequence.  
 
   Included in the project1 folder are test files from a Kaltura video made for an English class. Example Output below is based on the example files video, not the actual project or the total Kaltura video due to file storage limitations listed below.  
-      Due to github free account storage limitations, not all of the files in the test folder (storage limitation is 1GB, test file output is 1.33GB).  I have included the first 1000 files.  
-      For comparison's sake, the actual project is a 39m26s video of 71,302 frames and the image file total size is between 20 and 40GB. 
+
+  Due to github free account storage limitations, not all of the files in the test folder (storage limitation is 1GB, test file output is 1.33GB).  I have included the first 1000 files.  
+
+  For comparison's sake, the actual project is a 39m26s video of 71,302 frames and the image file total size is between 20 and 40GB. 
+
 
 
 To run this program, make sure Python3 is installed and working.
