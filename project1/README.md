@@ -3,17 +3,18 @@ This program bulk creates and moves files based on user input.  I created it bec
 To run this program, make sure Python3 is installed and working.
 
 If using Windows, type:
-python --version
+```python --version```
 
 If using Linux, you may need to specify Python3:
-python3 --version
+```python3 --version```
 
 
 From the project1 folder that contains bulkfilemover.py, run the program using Python
 python bulkfilemover.py
 
 Example Output:
-```$python bulkfilemover.py
+```
+$python bulkfilemover.py
 How many files do you have?
 2
 How many folders would you like?
@@ -27,4 +28,5 @@ What is the prefix? filename
 Folder folder1 created
 Folder folder2 created
 filename1 moved into folder1
-filename2 moved into folder2```
+filename2 moved into folder2
+```
