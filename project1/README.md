@@ -9,7 +9,7 @@ I created it because I have a large amount of files that I would like to be more
 
   For comparison's sake, the actual project is a 39m26s video of 71,302 frames and the image file total size is between 20 and 40GB.
 
-
+---
 Adapted from https://github.com/uc-botheaj/it3038c-scripts/tree/main/project1
 ---
   To run this program, make sure Python3 is installed and working.
