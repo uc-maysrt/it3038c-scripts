@@ -11,6 +11,7 @@ I wrote it because I have a large amount of files that I would like to be more o
 To run this program, make sure Python3 is installed and working.
 If using Windows, type:  
   ```python --version```  
+  
   If using Linux, you may need to specify Python3:  
   ```python3 --version```
 
