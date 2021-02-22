@@ -1,24 +1,36 @@
 import os
 import shutil
 #I have only tested this on Windows since that is how I create the source files of the project.
-#In theory, the os.* commands should be plaform agnostic and it will work on Linux/Mac
+#In theory, the os.* and shutil commands should be plaform agnostic and it will work on Linux/Mac
 
 #gets some user input for later
-print("How many files do you have?")
-numFiles = int(input())
+
+# This is unnecessary because the numbers per folder are hardcoded for now
+#print("How many files do you have?")
+#numFiles = int(input())
+
 print("How many folders would you like?")
 numFolders = int(input())
-print("How many files per folder would you like?")
-numFilesFolder = input()
-print("Where is the parent directory located?")
+
+# This is unnecessary because the number of files per folder are hardcoded for now
+#print("How many files per folder would you like?")
+#numFilesFolder = input()
+
+#Since Windows does \ but Mac+Linux does /
+#added the prompt about add the trailing slash
+print("Where is the parent directory located? Include trailing / or \\")
 parentDir = input()
 print("What would you like the folders called?")
 folderPrefix = input()
+
 #throws the file listing into a list to call later.
-fileList = os.listdir (parentDir)
+# discovered at https://www.tutorialspoint.com/python/os_listdir.htm 
+fileList = os.listdir( parentDir )
+#initialize an empty list that will be added to during the while loop.
+directoryList = []
+
 #creates folders
 # runs through a while loop until there are no new folders to create.
-directoryList = []
 while 0 < numFolders:
     folderName = folderPrefix + str(numFolders)
     #Not really reused from another source but:
@@ -46,48 +58,51 @@ while 0 < numFolders:
 
 # this one is necessary for the while loop.
 print("What is the last filename number?")
-lastFileNum = input()
+lastFileNum = int(input())
 
 # initializing the variable for later.
 fileCount = 0
 #runs through a while loop until there are no more files to move.
 #Discovered the main command through: https://docs.python.org/3/library/shutil.html
  
-while 0 < numFiles and fileCount != lastFileNum:
-#double conditional while loop.  Runs if the number of files is > 0 and as long as <variable> != lastFileNum
+while fileCount != lastFileNum:
+#was a double conditional while loop. the first condition has been rendered unnecessary for the time being.
+# first condition was "0 < numFiles" Runs if the number of files is > 0
+# second/currently only condition runs as long as fileCount does not equal the last file number put in by the user
+# should add error checking.
+
+#Because of how the directoryList list was constructed, it iterates through the list backwards.
     if fileCount < 100:
-        shutil.move(fileList[fileCount],newPath[0])
-        print("File " + fileList[fileCount] + " has been moved to " + newPath[0])
-    elif 100 < fileCount < 199:
-        shutil.move(fileList[fileCount],newPath[1])
-        print("File " + fileList[fileCount] + " has been moved to " + newPath[1])
-    elif 200 < fileCount < 299:
-        shutil.move(fileList[fileCount],newPath[2])
-        print("File " + fileList[fileCount] + " has been moved to " + newPath[2])
-    elif 300 < fileCount < 399:
-        shutil.move(fileList[fileCount],newPath[3])
-        print("File " + fileList[fileCount] + " has been moved to " + newPath[3])
-    elif 400 < fileCount < 499:
-        shutil.move(fileList[fileCount],newPath[4])
-        print("File " + fileList[fileCount] + " has been moved to " + newPath[4])
-    elif 500 < fileCount < 599:
-        shutil.move(fileList[fileCount],newPath[5])
-        print("File " + fileList[fileCount] + " has been moved to " + newPath[5])
-    elif 600 < fileCount < 699:
-        shutil.move(fileList[fileCount],newPath[6])
-        print("File " + fileList[fileCount] + " has been moved to " + newPath[6])
-    elif 700 < fileCount < 799:
-        shutil.move(fileList[fileCount],newPath[7])
-        print("File " + fileList[fileCount] + " has been moved to " + newPath[7])
-    elif 800 < fileCount < 899:
-        shutil.move(fileList[fileCount],newPath[8])
-        print("File " + fileList[fileCount] + " has been moved to " + newPath[8])
-    elif 900 < fileCount < 999:
-        shutil.move(fileList[fileCount],newPath[9])
-        print("File " + fileList[fileCount] + " has been moved to " + newPath[9])
-    #counts the number of files down by one
-    numFiles = numFiles - 1
+        shutil.move(parentDir + fileList[fileCount],directoryList[9])
+        print("File " + fileList[fileCount] + " has been moved to " + directoryList[9])
+    elif 100 <= fileCount <= 199:
+        shutil.move(parentDir + fileList[fileCount],directoryList[8])
+        print("File " + fileList[fileCount] + " has been moved to " + directoryList[8])
+    elif 200 <= fileCount <= 299:
+        shutil.move(parentDir + fileList[fileCount],directoryList[7])
+        print("File " + fileList[fileCount] + " has been moved to " + directoryList[7])
+    elif 300 <= fileCount <= 399:
+        shutil.move(parentDir + fileList[fileCount],directoryList[6])
+        print("File " + fileList[fileCount] + " has been moved to " + directoryList[6])
+    elif 400 <= fileCount <= 499:
+        shutil.move(parentDir + fileList[fileCount],directoryList[5])
+        print("File " + fileList[fileCount] + " has been moved to " + directoryList[5])
+    elif 500 <= fileCount <= 599:
+        shutil.move(parentDir + fileList[fileCount],directoryList[4])
+        print("File " + fileList[fileCount] + " has been moved to " + directoryList[4])
+    elif 600 <= fileCount <= 699:
+        shutil.move(parentDir + fileList[fileCount],directoryList[3])
+        print("File " + fileList[fileCount] + " has been moved to " + directoryList[3])
+    elif 700 <= fileCount <= 799:
+        shutil.move(parentDir + fileList[fileCount],directoryList[2])
+        print("File " + fileList[fileCount] + " has been moved to " + directoryList[2])
+    elif 800 <= fileCount <= 899:
+        shutil.move(parentDir + fileList[fileCount],directoryList[1])
+        print("File " + fileList[fileCount] + " has been moved to " + directoryList[1])
+    elif 900 <= fileCount <= 999:
+        shutil.move(parentDir + fileList[fileCount],directoryList[0])
+        print("File " + fileList[fileCount] + " has been moved to " + directoryList[0])
+#counts the number of files down by one ->rendered unnecessary
+#    numFiles = numFiles - 1
     #counts files moved up by one
     fileCount = fileCount + 1
-#
-#folderDeterminer = numFiles / numFilesFolder = numFolder
