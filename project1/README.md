@@ -50,4 +50,4 @@ example-(00901-01000).jpeg moved into example-10
 ## Known issues
 1. Amount of files per directory is hardcoded to 100.
 2. Linux (and possibly Mac): example-00999.jpeg and example-01000.jpeg do not move over. This behavior does not happen on Windows.
-3. Really only works with the example files and not the actual project files that I have.
+3. Really only works with the example files and not the actual project files that I have. [this is due to the hardcode of 100 per folder]
