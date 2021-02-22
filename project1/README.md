@@ -26,24 +26,24 @@ From the project1 folder that contains bulkfilemover.py, run the program using P
 Example Test Output:
 ```
 $python bulkfilemover.py
-How many files do you have?
-1000
 How many folders would you like?
 10
-How many files per folder would you like?
-100
-Where is the parent directory located?
-C:\project1
+Where is the parent directory located? Include trailing / or \
+C:\project1\
 What would you like the folders called? example-
 Folder example-1 created
 Folder example-2 created
 ...
 Folder example-10 created
 
-What is the filename prefix? example
-What is the file extension? .jpeg
+What is the last filename number? 1000
 example-(00001-00100).jpeg moved into example-1
 example-(00101-00200).jpeg moved into example-2
 ...
 example-(00901-01000).jpeg moved into example-10
 ```
+
+## Known issues
+1. Amount of files per directory is hardcoded to 100.
+2. Linux (and possibly Mac): example-00999.jpeg and example-01000.jpeg do not move over. This behavior does not happen on Windows.
+3. Really only works with the example files and not the actual project files that I have.

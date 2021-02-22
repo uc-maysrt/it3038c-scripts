@@ -32,18 +32,33 @@ directoryList = []
 #creates folders
 # runs through a while loop until there are no new folders to create.
 while 0 < numFolders:
-    folderName = folderPrefix + str(numFolders)
+    if numFolders == 10:
+        folderName = folderPrefix + str(numFolders)
     #Not really reused from another source but:
     # https://docs.python.org/3/library/os.html for finding the os.commands
     # https://www.geeksforgeeks.org/python-os-mkdir-method/ for more clarification, also the parentDir idea
-    newPath = os.path.join(parentDir,folderName)
-    os.mkdir(newPath)
-    print("Folder " + folderName + " created")
+        newPath = os.path.join(parentDir,folderName)
+        os.mkdir(newPath)
+        print("Folder " + folderName + " created")
     #Throwing the directory into a list for later recall
-    directoryList.append(newPath)
+        directoryList.append(newPath)
     #counts down the number. https://datatofish.com/while-loop-python/
     # sort of for the source because I had forgotten to count down originally...
-    numFolders = numFolders - 1
+        numFolders = int(numFolders) - 1
+    else:
+    #I really wanted my leading "0" if the number was under 10...
+        folderName = folderPrefix + "0" + str(numFolders)
+    #Not really reused from another source but:
+    # https://docs.python.org/3/library/os.html for finding the os.commands
+    # https://www.geeksforgeeks.org/python-os-mkdir-method/ for more clarification, also the parentDir idea
+        newPath = os.path.join(parentDir,folderName)
+        os.mkdir(newPath)
+        print("Folder " + folderName + " created")
+    #Throwing the directory into a list for later recall
+        directoryList.append(newPath)
+    #counts down the number. https://datatofish.com/while-loop-python/
+    # sort of for the source because I had forgotten to count down originally...
+        numFolders = numFolders - 1
 
 #moves files into previously created folders based on filenames/user input
 # None of these were necessary
