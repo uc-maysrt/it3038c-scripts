@@ -8,10 +8,11 @@ I wrote it because I have a large amount of files that I would like to be more o
   Due to github free account storage limitations, not all of the files in the `testfiles` folder (storage limitation is 1GB, test file output is 1.33GB).  I have included the first 1000 files (73MB).  
   For comparison's sake, the actual project is a 39m26s video of 71,302 frames and the image file total size is 38.5GB.
 
-To run this program, make sure Python3 is installed and working.
-If using Windows, type:  
+To run this program, make sure Python3 is installed and working.  
+
+  If using Windows, type:  
   ```python --version```  
-  
+
   If using Linux, you may need to specify Python3:  
   ```python3 --version```
 
