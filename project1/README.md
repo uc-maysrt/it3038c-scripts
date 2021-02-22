@@ -1,4 +1,5 @@
 # Project 1
+
 This program bulk creates and moves files based on user input.
 I created it because I have a large amount of files that I would like to be more organized based on the numeric sequence they are in.  These files are created by loading a video into a program called [VirtualDub2](https://sourceforge.net/projects/vdfiltermod/) and then doing an image sequence.  
 
@@ -9,8 +10,8 @@ I created it because I have a large amount of files that I would like to be more
   For comparison's sake, the actual project is a 39m26s video of 71,302 frames and the image file total size is between 20 and 40GB.
 
 
-  
-  
+Adapted from https://github.com/uc-botheaj/it3038c-scripts/tree/main/project1
+====
   To run this program, make sure Python3 is installed and working.
 
 If using Windows, type:  
