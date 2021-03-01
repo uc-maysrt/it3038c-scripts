@@ -24,7 +24,7 @@ var server = http.createServer(function(req, res){
             <!DOCTYPE html>
             <html>
                 <head>
-                    <title>Node JS Response</title>
+                    <title>System Information page</title>
                     <style>
                     p{
                         padding-left: 60px;
