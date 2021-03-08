@@ -1,5 +1,4 @@
 # My Github repo for IT3038C
-
 ### LAB 7
 Linux:
 ```bash
@@ -18,7 +17,7 @@ pip install requests
 Now, in Python, run the following code
 ```python
 import requests
-target = requests.get('')
+target = requests.get('http://www.uc.edu')
 ```
 
 The syntax above will load the target url.
@@ -38,7 +37,16 @@ encoding will return the encoding type (UTF-8, UTF-16, etc.)
 target.headers
 ```
 headers will return the headers of the website
-
+---
+```python
+targetScrape = open('uc_homepage.html', 'w')
+print(target.text, file = targetScrape)
+targetScrape.close()
+```
+This, while only partially part of the module, will scrape a copy of the url locally on the machine.
+It does use requests.text to pull all of the text from the webpage.
+For the example website, it ends up being quite ugly in the resulting html file
+---
 When done, deactivate the virtual environment
 ```
 deactivate
