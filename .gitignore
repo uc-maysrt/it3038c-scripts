@@ -1,5 +1,4 @@
 output.log
-*.txt
 .pycache
 *.log
 npm
