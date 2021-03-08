@@ -39,12 +39,12 @@ target.headers
 headers will return the headers of the website
 
 ---
+This next part, while only partially part of the module, will scrape a copy of the url locally to the machine.
 ```python
 targetScrape = open('uc_homepage.html', 'w')
 print(target.text, file = targetScrape)
 targetScrape.close()
 ```
-This, while only partially part of the module, will scrape a copy of the url locally on the machine.
 It does use requests.text to pull all of the text from the webpage.
 For the example website, it ends up being quite ugly in the resulting html file
 
