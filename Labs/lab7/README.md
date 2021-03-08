@@ -1,8 +1,9 @@
 # My Github repo for IT3038C
 ### LAB 7
+First step is to create a virtual environment called "requests" and then activate.
 Linux:
 ```bash
-virtualenv ~/venv
+virtualenv ~/venv/requests
 source ~/venv/bin/activate
 pip install requests
 ```
@@ -20,7 +21,7 @@ import requests
 target = requests.get('http://www.uc.edu')
 ```
 
-The syntax above will load the target url.
+The syntax above will load the target url (uc.edu in this case).
 After the target url is loaded, we can run a few commands that we can run against the URL.
 
 ```python
