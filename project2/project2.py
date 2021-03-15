@@ -2,6 +2,7 @@ import requests
 import os
 userTarget = requests.get('http://www.uc.edu')
 targetScrape = open("." + os.sep + "project2" + os.sep + "uc_homepage.html", 'w')
+#os.sep is from https://docs.python.org/3/library/os.html to make it a bit universal.
 print(userTarget.text, file = targetScrape)
 #This saves the webpage but the source has a lot of line breaks.
 #Extension of the project is getting rid of the empty line breaks.
