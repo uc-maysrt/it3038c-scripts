@@ -6,5 +6,6 @@ node_modules
 package-lock.json
 .vscode/launch.json
 Labs/lab7/samplefile.txt
-Labs/lab7/uc_homepage.html
+uc_homepage_cleaned.html
+uc_homepage.html
 project3/
