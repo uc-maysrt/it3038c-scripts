@@ -29,11 +29,11 @@ It uses regex to parse the url to get the information.
 It does not pull product name information on:
  - Desktops (e.g. https://www.microcenter.com/product/631993/powerspec-g508-gaming-computer )
  - laptops (e.g. https://www.microcenter.com/product/623186/hp-15-ef1072nr-156-laptop-computer---silver )
- - smart phones (e.g. https://www.microcenter.com/product/618178/samsung-galaxy-a51-unlocked-4g-lte---prism-crush-black-smartphone )
+ - smart phones (e.g. https://www.microcenter.com/product/618178/samsung-galaxy-a51-unlocked-4g-lte---prism-crush-black-smartphone )  
  Presumably, it is because the product name is on top and the specs are in the subheader under the product name.
 
-It also does not pulling pricing information on items with multiple prices due to volume discounts
- e.g. https://www.microcenter.com/product/484619/eset-internet-security---1-device,-3-year-(oem)
+It also does not pulling pricing information on items with multiple prices due to volume discounts  
+e.g. https://www.microcenter.com/product/484619/eset-internet-security---1-device,-3-year-(oem)
 
 #### Usage instructions
 1. Install requests and beautifulsoup
