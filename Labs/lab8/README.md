@@ -49,12 +49,12 @@ virtualenv C:\venv\ws-newegg
 C:\venv\requests\Scripts\activate.ps1
 pip install requests bs4
 ```
-2. From the folder that contains ws-microcenter.py, run the program using Python
+2. From the folder that contains ws-microcenter.py, run the program using Python  
 Windows: ```python ws-microcenter.py```  
 Linux: ```python3 ws-microcenter.py```
 3. Follow the instruction on screen and provide a microcenter webpage.
-Some example ones are: 
-    https://www.microcenter.com/product/634208/amd-ryzen-threadripper-pro-3995wx-castle-peak-27ghz-64-core-swrx8-boxed-processor
-    https://www.microcenter.com/product/630684/asus-geforce-rtx-3070-tuf-overclocked-triple-fan-8gb-gddr6-pcie-40-graphics-card
-    https://www.microcenter.com/product/602978/micro-center-full-size-arcade-cabinet-32---unassembled
+Some example ones are:  
+https://www.microcenter.com/product/634208/amd-ryzen-threadripper-pro-3995wx-castle-peak-27ghz-64-core-swrx8-boxed-processor  
+https://www.microcenter.com/product/630684/asus-geforce-rtx-3070-tuf-overclocked-triple-fan-8gb-gddr6-pcie-40-graphics-card  
+https://www.microcenter.com/product/602978/micro-center-full-size-arcade-cabinet-32---unassembled
 4. It will print the output to the console
