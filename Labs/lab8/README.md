@@ -18,7 +18,7 @@ C:\venv\requests\Scripts\activate.ps1
 pip install requests bs4
 ```
 2. From the folder that contains ws-newegg.py, run the program using Python
-Windows: ```python ws-newegg.py```
+Windows: ```python ws-newegg.py```  
 Linux: ```python3 ws-newegg.py```
 3. It will print the output to the console.
 
@@ -50,7 +50,7 @@ C:\venv\requests\Scripts\activate.ps1
 pip install requests bs4
 ```
 2. From the folder that contains ws-microcenter.py, run the program using Python
-Windows: ```python ws-microcenter.py```
+Windows: ```python ws-microcenter.py```  
 Linux: ```python3 ws-microcenter.py```
 3. Follow the instruction on screen and provide a microcenter webpage.
 Some example ones are: 
