@@ -17,9 +17,9 @@ virtualenv C:\venv\ws-newegg
 C:\venv\requests\Scripts\activate.ps1
 pip install requests bs4
 ```
-2. From the folder that contains ws-newegg.py, run the program using Python
-Windows: ```python ws-newegg.py```  
-Linux: ```python3 ws-newegg.py```
+2. From the folder that contains ws-newegg.py, run the program using Python  
+    Windows: ```python ws-newegg.py```  
+    Linux: ```python3 ws-newegg.py```
 3. It will print the output to the console.
 
 ### ws-microcenter.py
@@ -28,8 +28,8 @@ It uses regex to parse the url to get the information.
 #### Known issues
 It does not pull product name information on:
  - Desktops (e.g. https://www.microcenter.com/product/631993/powerspec-g508-gaming-computer )
- - laptops (e.g. https://www.microcenter.com/product/623186/hp-15-ef1072nr-156-laptop-computer---silver )
- - smart phones (e.g. https://www.microcenter.com/product/618178/samsung-galaxy-a51-unlocked-4g-lte---prism-crush-black-smartphone )  
+ - Laptops (e.g. https://www.microcenter.com/product/623186/hp-15-ef1072nr-156-laptop-computer---silver )
+ - Phones (e.g. https://www.microcenter.com/product/618178/samsung-galaxy-a51-unlocked-4g-lte---prism-crush-black-smartphone )  
  Presumably, it is because the product name is on top and the specs are in the subheader under the product name.
 
 It also does not pulling pricing information on items with multiple prices due to volume discounts  
@@ -50,8 +50,8 @@ C:\venv\requests\Scripts\activate.ps1
 pip install requests bs4
 ```
 2. From the folder that contains ws-microcenter.py, run the program using Python  
-Windows: ```python ws-microcenter.py```  
-Linux: ```python3 ws-microcenter.py```
+    Windows: ```python ws-microcenter.py```  
+    Linux: ```python3 ws-microcenter.py```
 3. Follow the instruction on screen and provide a microcenter webpage.
 Some example ones are:  
 https://www.microcenter.com/product/634208/amd-ryzen-threadripper-pro-3995wx-castle-peak-27ghz-64-core-swrx8-boxed-processor  
