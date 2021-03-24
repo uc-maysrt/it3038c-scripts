@@ -1,5 +1,13 @@
 var http = require("http");
-const data = require("./widgets.json")
+var data = require("./public/data/widgets.json")
+
+function listBlue(res) {
+    var colorBlue = data.filter(function(item) {
+        return item.color == "blue";
+    });
+    res.end(JSON.stringify(colorBlue));
+};
+
 var server = http.createServer(function(req, res){
     if (req.url == "/") {
         res.writeHead(200, {"Content-Type": "text/json"});
@@ -14,11 +22,6 @@ var server = http.createServer(function(req, res){
     }
 });
 server.listen(3000);
-//console.log("Server is listening on port 3000");
+console.log("Server is listening on port 3000");
 
-function listBlue(res) {
-    var colorBlue = data.filter(function(item) {
-        return item.color == "blue";
-    });
-    res.end(JSON.stringify(colorBlue));
-};
+
