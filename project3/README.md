@@ -64,10 +64,12 @@ python3 <filename>.py
 ```
 Resulting files will be named split_##.xlsx or split_##.csv
 
-## Known issue
-At least with the original Excel file, I get a warning:
+## Known issues
+1. At least with the original Excel file, I get a warning:
 ```
 C:\venv\giantfile\lib\site-packages\openpyxl\styles\stylesheet.py:221: UserWarning: Workbook contains no default style, apply openpyxl's default
   warn("Workbook contains no default style, apply openpyxl's default")
 ```
 However, this is not a showstopper.  It is just a warning.  Also worth noting that I did not get the same warning with the fake data.
+
+2. Not really an issue but a limitation of sorts.  It will not work with xls files.  XLS files are files created by Office 2003 and earlier.  Microsoft changed their file formats beginning in Office 2007 to include an additional "x" (docx, xlsx, pptx, etc.)
