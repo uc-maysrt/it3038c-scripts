@@ -2,16 +2,16 @@
 ## What this project does:
 For work, we were given a 272MB Excel file.  It's about 350,000 rows and the columns go out to DQ (A-Z, AA-AZ, BA-BZ, CA-CZ, DA-DQ).
 When I tried to open it, it took over 24 hours (26 hours I believe) to do so.
-<br \>
+
+
 Utilizing Python, we will split the file into more managable files.  With my original file, it took longer than an hour (up to around 2 hours total before I stopped it) to split it all up at 100,000 splits.
 Unfortunately, I am unable to provide the actual original Excel file, however, included is a script to create a similar (but smaller) sample.
-<br \>
 
 ### Usage instructions
-1. install pandas, numpy, openpyxl, and faker  
-<br \>
-**NOTE** Faker is only required if you want to make your own fake excel data files.
-<br \>
+1. install pandas, numpy, openpyxl, and faker  <br \>
+
+**NOTE** Faker is only required if you want to make your own fake excel data files.<br \>
+
 Linux:
 ```bash
 virtualenv ~/venv/giantfile
@@ -20,8 +20,8 @@ pip3 install pandas
 pip3 install numpy
 pip3 install openpyxl
 pip3 install faker
-```
-<br \>
+``` <br \>
+
 Windows:
 ```powershell
 virtualenv C:\venv\giantfile
