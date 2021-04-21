@@ -5,6 +5,7 @@ import pandas
 import numpy
 # https://numpy.org/doc/1.16/reference/routines.random.html
 from faker.providers.person.en import Provider
+
 import openpyxl
 
 # https://www.caktusgroup.com/blog/2020/04/15/quick-guide-generating-fake-data-with-pandas/
@@ -20,14 +21,17 @@ def random_genders(size, p=None):
     gender = ("M", "F", "O", "")
     return numpy.random.choice(gender, size=size, p=p)
 def random_dates(start, end, size):
-    #Generates random dates
+    #Generates random birthdates
     divide_by = 24 * 60 * 60 * 10**9
     start_u = start.value // divide_by
     end_u = end.value // divide_by
     return pandas.to_datetime(numpy.random.randint(start_u, end_u, size), unit="D")
 def random_active(size):
+    #This is to denote whether the account is active or not.
+    #This is an addition
     active = ("Yes", "No")
     return numpy.random.choice(active, size=size)
+
 print("How many rows would you like?")
 size = int(input())
 datafile = pandas.DataFrame(columns=['First', 'Last', 'Gender', 'Birthdate', 'Active'])
