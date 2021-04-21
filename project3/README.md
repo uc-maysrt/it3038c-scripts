@@ -7,7 +7,7 @@ Utilizing Python, we will split the file into more managable files.  With my ori
 Unfortunately, I am unable to provide the actual original Excel file, however, included is a script to create a similar (but smaller) sample.
 
 ### Usage instructions
-1. install pandas, numpy, openpyxl, and faker
+1. install pandas, numpy, openpyxl, and faker  
 **NOTE** Faker is only required if you want to make your own fake excel data files.
 
 Linux:
