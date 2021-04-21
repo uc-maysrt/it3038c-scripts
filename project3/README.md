@@ -54,16 +54,16 @@ Linux:
 python3 sampler.py
 ```  
 
-3. Run <filename.py> and provide the information as needed.  Suggestion for the rowsize would be 10,000 for rows per file.  
+3. Run excelfilesplitter.py and provide the information as needed.  Suggestion for the rowsize would be 10,000 for rows per file.  
 
 Windows:
 ```powershell
-python <filename>.py
+python excelfilesplitter.py
 ```  
 
 Linux:
 ```bash
-python3 <filename>.py
+python3 excelfilesplitter.py
 ```
 Resulting files will be named split_##.xlsx or split_##.csv  
 
