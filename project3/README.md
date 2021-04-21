@@ -9,7 +9,7 @@ Unfortunately, I am unable to provide the actual original Excel file, however, i
 ### Usage instructions
 1. install pandas, numpy, openpyxl, and faker  
 **NOTE** Faker is only required if you want to make your own fake excel data files.
-
+  
 Linux:
 ```bash
 virtualenv ~/venv/giantfile
@@ -19,7 +19,7 @@ pip3 install numpy
 pip3 install openpyxl
 pip3 install faker
 ```
-
+  
 Windows:
 ```powershell
 virtualenv C:\venv\giantfile
@@ -29,35 +29,37 @@ pip install numpy
 pip install openpyxl
 pip install faker
 ```
-
+  
 Alternatively for the pip install lines, you can just do:
 Linux:
 ```bash
 pip3 install -r requirements.txt
 ```
+  
 Windows:
 ```powershell
 pip install -r requirements.txt
 ```
-
+  
 2. (Optional) Run the sampler script to create dummy files.  Suggestion would be 50,000 for amount of rows.  Resulting files should be about 2MB each.  Filenames are this-file-is-fake-data.csv and this-file-is-fake-data.xlsx
-
+  
 Windows:
 ```powershell
 python sampler.py
 ```
-
+  
 Linux:
 ```bash
 python3 sampler.py
 ```
 
 3. Run <filename.py> and provide the information as needed.  Suggestion for the rowsize would be 10,000 for rows per file.
+  
 Windows:
 ```powershell
 python <filename>.py
 ```
-
+  
 Linux:
 ```bash
 python3 <filename>.py
